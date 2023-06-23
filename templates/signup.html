@@ -1,0 +1,31 @@
+{% extends "front_page.html" %}
+{% block body %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <form action="/register_user" method="post">
+            <div class="px-2">
+                <h2>Signup here if you are new</h2>
+                <br>
+                <label for="name">Name:</label>
+                <input required text="text" id="name" name="name" placeholder="Enter your name">
+
+                <br>
+                <label for="email">email:</label>
+                <input required text="email" id="email" name="email" placeholder="Enter your email">
+
+                <br>
+                <label for="password">password:</label>
+                <input required text="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" value="submit" class="px-2 btn btn-primary">
+                Register
+            </button>
+        </form>
+    </body>
+</html>
+
+{% endblock %}
