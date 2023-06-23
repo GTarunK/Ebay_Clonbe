@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+
+{% block body %}
+	<div class = "mx-2">
+		{% for listing in listings_data %}
+			<h3>{{listing.title}}</h3>
+			<p>{{listing.price}}</p>
+			<p>{{listing.description}}</p>
+			<img src={{listing.image}}>
+		{% endfor %}
+	</div>
+{% endblock %}
